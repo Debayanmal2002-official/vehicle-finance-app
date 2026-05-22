@@ -5,8 +5,8 @@ from pathlib import Path
 
 # MAIN GLOBAL SETUP
 st.set_page_config(
-    page_title="Smart Wheeler Finance Intelligence",
-    page_icon="🪙",
+    page_title="ShiftGear Finance Advisor",
+    page_icon="⚙️",
     layout="wide"
 )
 # Initialize session state for page navigation if it doesn't exist
