@@ -284,35 +284,35 @@ else:
             bike_tenure = st.number_input("Tenure Duration (Years)", min_value=1, max_value=5, value=5, step=1,
                                           key="sl_bike_t", help = "For Basic Loan Breakdown tab only, won't effect rest tabs")
             # 📑 Native Browser PDF Print Trigger
-st.markdown("### 🖨️ Export Financial Analysis")
-
-# Centered layout container for the custom print trigger
-p_col1, p_col2, p_col3 = st.columns([1, 2, 1])
-
-with p_col2:
-    # Custom HTML button that fires window.print() on click
-    print_button_html = """
-    <button onclick="window.print()" style="
-        width: 100%;
-        background-color: #38BDF8;
-        color: #0F172A;
-        border: none;
-        padding: 12px 24px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition-duration: 0.2s;
-        box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.2);
-    " onmouseover="this.style.backgroundColor='#0EA5E9'" onmouseout="this.style.backgroundColor='#38BDF8'">
-        📄 Generate & Download PDF Report
-    </button>
-    """
-    st.components.v1.html(print_button_html, height=60)
+            st.markdown("### 🖨️ Export Financial Analysis")
+            
+            # Centered layout container for the custom print trigger
+            p_col1, p_col2, p_col3 = st.columns([1, 2, 1])
+            
+            with p_col2:
+                # Custom HTML button that fires window.print() on click
+                print_button_html = """
+                <button onclick="window.print()" style="
+                    width: 100%;
+                    background-color: #38BDF8;
+                    color: #0F172A;
+                    border: none;
+                    padding: 12px 24px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    transition-duration: 0.2s;
+                    box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.2);
+                " onmouseover="this.style.backgroundColor='#0EA5E9'" onmouseout="this.style.backgroundColor='#38BDF8'">
+                    📄 Generate & Download PDF Report
+                </button>
+                """
+                st.components.v1.html(print_button_html, height=60)
 
             # Pure Bike Mathematical Formulas
             bike_loan_principal = bike_price - bike_down_p
@@ -837,35 +837,35 @@ with p_col2:
             car_tenure = st.number_input("Tenure Duration (Years)", min_value=1, max_value=7, value=7, step=1,
                                          key="sl_car_t", help = "For Basic Loan Breakdown tab only, won't effect rest tabs")
             # 📑 Native Browser PDF Print Trigger
-st.markdown("### 🖨️ Export Financial Analysis")
-
-# Centered layout container for the custom print trigger
-p_col1, p_col2, p_col3 = st.columns([1, 2, 1])
-
-with p_col2:
-    # Custom HTML button that fires window.print() on click
-    print_button_html = """
-    <button onclick="window.print()" style="
-        width: 100%;
-        background-color: #38BDF8;
-        color: #0F172A;
-        border: none;
-        padding: 12px 24px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 4px 2px;
-        cursor: pointer;
-        border-radius: 8px;
-        transition-duration: 0.2s;
-        box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.2);
-    " onmouseover="this.style.backgroundColor='#0EA5E9'" onmouseout="this.style.backgroundColor='#38BDF8'">
-        📄 Generate & Download PDF Report
-    </button>
-    """
-    st.components.v1.html(print_button_html, height=60)
+            st.markdown("### 🖨️ Export Financial Analysis")
+            
+            # Centered layout container for the custom print trigger
+            p_col1, p_col2, p_col3 = st.columns([1, 2, 1])
+            
+            with p_col2:
+                # Custom HTML button that fires window.print() on click
+                print_button_html = """
+                <button onclick="window.print()" style="
+                    width: 100%;
+                    background-color: #38BDF8;
+                    color: #0F172A;
+                    border: none;
+                    padding: 12px 24px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                    font-weight: bold;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 8px;
+                    transition-duration: 0.2s;
+                    box-shadow: 0 4px 6px -1px rgba(56, 189, 248, 0.2);
+                " onmouseover="this.style.backgroundColor='#0EA5E9'" onmouseout="this.style.backgroundColor='#38BDF8'">
+                    📄 Generate & Download PDF Report
+                </button>
+                """
+                st.components.v1.html(print_button_html, height=60)
 
             # Pure Car Mathematical Formulas
             car_loan_principal = car_price - car_down_p
