@@ -778,7 +778,7 @@ else:
                     ### ⚡ The Time-vs-Money Trade-Off:
                     * **🚀 Time Saved:** You hit the road **{(b_months_to_full_cash - b_time_to_down_payment):.1f} Months earlier** than waiting to buy the vehicle with 100% full cash down.
                     * **🏆 Asset Ownership:** You will 100% own the vehicle **{(bike_months - b_time_to_down_payment - b_test_months ):.1f} Months** before the initial **{int(bike_tenure):,} Years** loan.
-                    * **💸 Premium Paid:** The total interest cost for skipping time is just **₹{int(b_total_loan_capacity - b_max_principal_loan):,}** extra.
+                    * **💸 Premium Paid:** The total interest cost for skipping time is just **₹{int(b_total_loan_capacity - b_max_principal_loan):,}** compare to initial loan interest of **₹{int(bike_total_interest):,}**.
                     """)
 
 
@@ -1300,5 +1300,5 @@ else:
                     ### ⚡ The Time-vs-Money Trade-Off:
                     * **🚀 Time Saved:** You hit the road **{(c_months_to_full_cash - c_time_to_down_payment):.1f} Months earlier** than waiting to buy the vehicle with 100% full cash down.
                     * **🏆 Asset Ownership:** You will 100% own the vehicle **{(car_months - c_time_to_down_payment - c_test_months):.1f} Months** before the initial **{int(car_tenure):,} Years** loan.
-                    * **💸 Premium Paid:** The total interest cost for skipping time is just **₹{int(c_total_loan_capacity - c_max_principal_loan):,}** extra.
+                    * **💸 Premium Paid:** The total interest cost for skipping time is just **₹{int(c_total_loan_capacity - c_max_principal_loan):,}** compare to initial loan interest of **₹{int(car_total_interest):,}**.
                     """)
