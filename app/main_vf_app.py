@@ -715,13 +715,12 @@ else:
                 elif b_total_loan_capacity < b_cash_floor_limit:
                     rejection_reason = f"Your true borrowable principal capacity (**₹{int(b_max_principal_loan):,}**) falls beneath 20% of the vehicle's sticker value (**₹{int(b_cash_floor_limit):,}**). Taking a loan for this small an amount is an inefficient capital drain."
                 else:
-                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from immediate present. Although Full down payment or shorter loan tenure than chosen one is recommended to avoid paying interest."
-                    
+                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from immediate present. Although Full down payment or shorter loan tenure than chosen one is recommended to reduce paying interest."
+
                 st.markdown(f"""
                         {rejection_reason}
-
                         * **Strategic Direction:** Avoid all banking friction, hidden processing fees, and interest leakage.
-                        * **Target:** Accumulate 100% cash to buy the asset outright.
+                        * **Target:** Accumulate 100% cash to buy the asset outright if time allows or go for a shorter loan tenure.
                         * **Time to Destination:** Approximately **{b_months_to_full_cash:.1f} months** of running your current savings rate of **₹{int(b_m_savings):,}/mo**.
                         """)
 
@@ -1238,13 +1237,13 @@ else:
                 elif c_total_loan_capacity < c_cash_floor_limit:
                     rejection_reason = f"Your true borrowable principal capacity (**₹{int(c_max_principal_loan):,}**) falls beneath 20% of the vehicle's sticker value (**₹{int(c_cash_floor_limit):,}**). Taking a loan for this small an amount is an inefficient capital drain."
                 else:
-                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from today. Although Full down payment is recommended to avoid paying interest."
+                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from immediate present. Although Full down payment or shorter loan tenure than chosen one is recommended to reduce paying interest."
 
                 st.markdown(f"""
                         {rejection_reason}
 
                         * **Strategic Direction:** Avoid all banking friction, hidden processing fees, and interest leakage.
-                        * **Target:** Accumulate 100% cash to buy the asset outright.
+                        * **Target:** Accumulate 100% cash to buy the asset outright if time allows or go for shorter loan tenure.
                         * **Time to Destination:** Approximately **{c_months_to_full_cash:.1f} months** of running your current savings rate of **₹{int(c_m_savings):,}/mo**.
                         """)
 
