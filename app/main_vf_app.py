@@ -675,7 +675,7 @@ else:
 
             # 1. User Choice for Aggressive Short Tenure Horizon
             b_test_tenure = st.selectbox(
-                "Select Beta Test Tenure Strategy",
+                "Short Term Loan Tenure",
                 options=[1, 1.5, 2, 2.5, 3],
                 format_func=lambda x: f"{x} Year Plan ({int(x * 12)} Months)",
                 key="b_beta_tenure_pick",
@@ -719,7 +719,7 @@ else:
                         {rejection_reason}
 
                         * **Strategic Direction:** Avoid all banking friction, hidden processing fees, and interest leakage.
-                        * **Beta Test Target:** Accumulate 100% cash to buy the asset outright.
+                        * **Target:** Accumulate 100% cash to buy the asset outright.
                         * **Time to Destination:** Approximately **{b_months_to_full_cash:.1f} months** of running your current savings rate of **₹{int(b_m_savings):,}/mo**.
                         """)
 
@@ -775,7 +775,7 @@ else:
                     ### 🎯 Beta Test Action Plan
 
                     * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(b_m_savings):,}/mo** into your simulation pool.
-                    * **⏳ Testing Timeline:** Run this drill for exactly **{b_time_to_down_payment:.1f} Months**.
+                    * **⏳ Savings Timeline:** Run this drill for exactly **{b_time_to_down_payment:.1f} Months**.
                     * **💰 Target Down Payment:** Once your pool hits **₹{int(b_min_down_payment):,}**, sign the paperwork. Your daily lifestyle won't shift a single millimeter.
 
                     ---
@@ -1200,10 +1200,11 @@ else:
 
             # 1. User Choice for Aggressive Short Tenure Horizon
             c_test_tenure = st.selectbox(
-                "Select Beta Test Tenure Strategy",
+                "Short Term Loan Tenure",
                 options=[1, 1.5, 2, 2.5, 3, 3.5, 4],
                 format_func=lambda x: f"{x} Year Plan ({int(x * 12)} Months)",
                 key="c_beta_tenure_pick"
+                help="Ideally 3 years. At max 4 years."
             )
 
             # 2. Mathematical Calculations Pipeline
@@ -1245,7 +1246,7 @@ else:
                         {rejection_reason}
 
                         * **Strategic Direction:** Avoid all banking friction, hidden processing fees, and interest leakage.
-                        * **Beta Test Target:** Accumulate 100% cash to buy the asset outright.
+                        * **Target:** Accumulate 100% cash to buy the asset outright.
                         * **Time to Destination:** Approximately **{c_months_to_full_cash:.1f} months** of running your current savings rate of **₹{int(c_m_savings):,}/mo**.
                         """)
 
@@ -1299,7 +1300,7 @@ else:
                     ### 🎯 Beta Test Action Plan
 
                     * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(c_m_savings):,}/mo** into your simulation pool.
-                    * **⏳ Testing Timeline:** Run this drill for exactly **{c_time_to_down_payment:.1f} Months**.
+                    * **⏳ Savings Timeline:** Run this drill for exactly **{c_time_to_down_payment:.1f} Months**.
                     * **💰 Target Down Payment:** Once your pool hits **₹{int(c_min_down_payment):,}**, sign the paperwork. Your daily lifestyle won't shift a single millimeter.
 
                     ---
