@@ -1203,7 +1203,7 @@ else:
                 "Short Term Loan Tenure",
                 options=[1, 1.5, 2, 2.5, 3, 3.5, 4],
                 format_func=lambda x: f"{x} Year Plan ({int(x * 12)} Months)",
-                key="c_beta_tenure_pick"
+                key="c_beta_tenure_pick",
                 help="Ideally 3 years. At max 4 years."
             )
 
