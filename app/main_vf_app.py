@@ -712,7 +712,7 @@ else:
                 rejection_reason = ""
                 if b_max_principal_loan < 30000:
                     rejection_reason = f"Your maximum borrowable principal (**₹{int(b_max_principal_loan):,}**) falls below the real-world banking threshold of **₹30,000**. No major lender will approve a vehicle loan this low."
-                elseif b_total_loan_capacity < b_cash_floor_limit:
+                elif b_total_loan_capacity < b_cash_floor_limit:
                     rejection_reason = f"Your true borrowable principal capacity (**₹{int(b_max_principal_loan):,}**) falls beneath 20% of the vehicle's sticker value (**₹{int(b_cash_floor_limit):,}**). Taking a loan for this small an amount is an inefficient capital drain."
                 else:
                     rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from today. Although Full down payment is 
@@ -1242,7 +1242,7 @@ else:
                 rejection_reason = ""
                 if c_max_principal_loan < 30000:
                     rejection_reason = f"Your maximum borrowable principal (**₹{int(c_max_principal_loan):,}**) falls below the real-world banking threshold of **₹100,000**. No major lender will approve a vehicle loan this low."
-                elseif c_total_loan_capacity < c_cash_floor_limit:
+                elif c_total_loan_capacity < c_cash_floor_limit:
                     rejection_reason = f"Your true borrowable principal capacity (**₹{int(c_max_principal_loan):,}**) falls beneath 20% of the vehicle's sticker value (**₹{int(c_cash_floor_limit):,}**). Taking a loan for this small an amount is an inefficient capital drain."
                 else:
                     rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from today. Although Full down payment is 
