@@ -733,15 +733,9 @@ else:
 
                 b_min_down_payment = bike_price - b_max_principal_loan
                 b_months_to_full_cash = bike_price / b_m_savings
-
-                if b_max_principal_loan >= bike_price:
-                    b_min_down_payment = 0.0
-                    b_time_to_down_payment = 0.0
-                    b_actual_loan_needed = bike_price
-                else:
-                    b_min_down_payment = bike_price - b_max_principal_loan
-                    b_time_to_down_payment = b_min_down_payment / b_m_savings if b_m_savings > 0 else 0
-                    b_actual_loan_needed = b_max_principal_loan
+                b_min_down_payment = bike_price - b_max_principal_loan
+                b_time_to_down_payment = b_min_down_payment / b_m_savings if b_m_savings > 0 else 0
+                b_actual_loan_needed = b_max_principal_loan
 
                 # Render Layout Split
                 b_col_d1, b_col_d2, b_col_d3 = st.columns(3)
@@ -1261,14 +1255,9 @@ else:
                 st.warning("### 📈 Strategy Recommendation: STRUCTURED DOWN PAYMENT PLAN")
 
                 c_months_to_full_cash = car_price / c_m_savings
-                if c_max_principal_loan >= car_price:
-                    c_min_down_payment = 0.0
-                    c_time_to_down_payment = 0.0
-                    c_actual_loan_needed = car_price
-                else:
-                    c_min_down_payment = car_price - c_max_principal_loan
-                    c_time_to_down_payment = c_min_down_payment / c_m_savings if c_m_savings > 0 else 0
-                    c_actual_loan_needed = c_max_principal_loan
+                c_min_down_payment = car_price - c_max_principal_loan
+                c_time_to_down_payment = c_min_down_payment / c_m_savings if c_m_savings > 0 else 0
+                c_actual_loan_needed = c_max_principal_loan
 
                 # Render Layout Split
                 c_col_d1, c_col_d2, c_col_d3 = st.columns(3)
