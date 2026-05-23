@@ -639,7 +639,7 @@ else:
             # Dynamic Dropdown Explanation Section for Bike
             with st.expander("💡 Ownership Stress Test Strategy (Logic Behind This Equation)"):
                 st.markdown(f"""
-                                ### 🧪 The Sandbox Ownership Simulation
+                                ### 🧪 Ownership Stress Simulation
                                 This matrix doesn't just calculate affordability—it **stress-tests your behavior** before you sign a legally binding bank contract.
 
                                 ---
@@ -774,7 +774,7 @@ else:
                 st.markdown(f"""
                     ### 🎯 Optimal Savings Plan:
 
-                    * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(b_m_savings):,}/mo** into your simulation pool.
+                    * **🛠️ Saving Routine:** Lock down and divert **₹{int(b_m_savings):,}/month** into your safe savings funds but with good returns to beat inflation.
                     * **⏳ Savings Timeline:** Run this drill for exactly **{b_time_to_down_payment:.1f} Months**.
                     * **💰 Target Down Payment:** Once your pool hits **₹{int(b_min_down_payment):,}**, sign the paperwork. Your daily lifestyle won't shift a single millimeter.
 
@@ -1163,7 +1163,7 @@ else:
             # Dropdown Explanation Section placed right below the metric rows
             with st.expander("💡 Ownership Stress Test Strategy (Logic Behind This Equation)"):
                 st.markdown(f"""
-                                ### 🧪 The Sandbox Ownership Simulation
+                                ### 🧪 Ownership Stress Simulation
                                 This matrix doesn't just calculate affordability—it **stress-tests your behavior** before you sign a legally binding bank contract.
 
                                 ---
@@ -1299,7 +1299,7 @@ else:
                 st.markdown(f"""
                     ### 🎯 Optimal Savings Plan:
 
-                    * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(c_m_savings):,}/mo** into your simulation pool.
+                    * **🛠️ Saving Routine:** Lock down and divert **₹{int(c_m_savings):,}/month** into your safe savings funds but with good returns to beat inflation.
                     * **⏳ Savings Timeline:** Run this drill for exactly **{c_time_to_down_payment:.1f} Months**.
                     * **💰 Target Down Payment:** Once your pool hits **₹{int(c_min_down_payment):,}**, sign the paperwork. Your daily lifestyle won't shift a single millimeter.
 
