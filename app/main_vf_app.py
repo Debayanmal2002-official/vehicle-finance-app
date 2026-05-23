@@ -715,7 +715,7 @@ else:
                 elif b_total_loan_capacity < b_cash_floor_limit:
                     rejection_reason = f"Your true borrowable principal capacity (**₹{int(b_max_principal_loan):,}**) falls beneath 20% of the vehicle's sticker value (**₹{int(b_cash_floor_limit):,}**). Taking a loan for this small an amount is an inefficient capital drain."
                 else:
-                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from immediate present. Although Full down payment is recommended to avoid paying interest."
+                    rejection_reason = f"Your monthly savings is large enough to comfortably get the bike with zero down payment from immediate present. Although Full down payment or shorter loan tenure than chosen one is recommended to avoid paying interest."
                     
                 st.markdown(f"""
                         {rejection_reason}
