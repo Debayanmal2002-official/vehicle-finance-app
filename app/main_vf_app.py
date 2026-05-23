@@ -637,7 +637,7 @@ else:
                     unsafe_allow_html=True
                 )
             # Dynamic Dropdown Explanation Section for Bike
-            with st.expander("💡 The Financial Beta Test Strategy (Logic Behind This Equation)"):
+            with st.expander("💡 Ownership Stress Test Strategy (Logic Behind This Equation)"):
                 st.markdown(f"""
                                 ### 🧪 The Sandbox Ownership Simulation
                                 This matrix doesn't just calculate affordability—it **stress-tests your behavior** before you sign a legally binding bank contract.
@@ -1161,7 +1161,7 @@ else:
                 )
 
             # Dropdown Explanation Section placed right below the metric rows
-            with st.expander("💡 The Financial Beta Test Strategy (Logic Behind This Equation)"):
+            with st.expander("💡 Ownership Stress Test Strategy (Logic Behind This Equation)"):
                 st.markdown(f"""
                                 ### 🧪 The Sandbox Ownership Simulation
                                 This matrix doesn't just calculate affordability—it **stress-tests your behavior** before you sign a legally binding bank contract.
