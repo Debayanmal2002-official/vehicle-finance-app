@@ -275,11 +275,11 @@ else:
                 st.rerun()
 
             st.markdown("### 🛠️ Bike Financial Levers")
-            bike_price = st.number_input("Bike On Road Price (₹)", min_value=50000, max_value=8000000, value=180000,
+            bike_price = st.number_input("Bike On Road Price (₹)", min_value=50000, max_value=8000000, value=443200,
                                          step=10000, key="sl_bike_p")
             bike_rate = st.number_input("Bike Interest Rate (Annual %)", min_value=3.0, max_value=18.0, value=14.0,
                                         step=0.25, key="sl_bike_r")
-            bike_down_p = st.number_input("Down Payment (₹)", min_value=0, max_value=int(bike_price), value=18000,
+            bike_down_p = st.number_input("Down Payment (₹)", min_value=0, max_value=int(bike_price), value=44000,
                                           step=2000, key="sl_bike_dp", help = "For Basic Loan Breakdown tab only, won't effect rest tabs")
             bike_tenure = st.number_input("Tenure Duration (Years)", min_value=1, max_value=5, value=5, step=1,
                                           key="sl_bike_t", help = "For Basic Loan Breakdown tab only, won't effect rest tabs")
@@ -455,26 +455,26 @@ else:
                     st.markdown("##### 🌆 City Commute Split")
                     b_weekly_city_km = st.number_input("Weekly City Distance (km)", min_value=0, max_value=2000, value=150,
                                                       step=5, key="b_fuel_cc_km")
-                    b_city_mileage = st.number_input("City Mileage (km/L)", min_value=1, max_value=90, value=40,
-                                                     step=2, key="b_fuel_cc_mlg")
+                    b_city_mileage = st.number_input("City Mileage (km/L)", min_value=1, max_value=90, value=18,
+                                                     step=1, key="b_fuel_cc_mlg")
 
                 with col_op_inputs_r:
                     st.markdown("##### 🛣️ Highway Commute Split")
                     b_weekly_hwy_km = st.number_input("Weekly Highway Distance (km)", min_value=0, max_value=1500,
-                                                      value=100, step=20, key="b_fuel_hw_km")
-                    b_hwy_mileage = st.number_input("Highway Mileage (km/L)", min_value=1, max_value=95, value=52,
-                                                    step=2, key="b_fuel_hw_mlg")
+                                                      value=50, step=5, key="b_fuel_hw_km")
+                    b_hwy_mileage = st.number_input("Highway Mileage (km/L)", min_value=1, max_value=95, value=27,
+                                                    step=1, key="b_fuel_hw_mlg")
                 st.markdown("##### 🛠️ Fixed Maintenance Overhead")
                 col1, col2, col3 = st.columns(3)
                 with col1:
                     b_fuel_price = st.number_input("Local Petrol Price (₹/L)", min_value=60.0, max_value=1000.0,
-                                                   value=104.5, step=0.5, key="b_fuel_price_val")
+                                                   value=105.5, step=0.5, key="b_fuel_price_val")
                 with col2:
                     b_annual_service = st.number_input("Annual Servicing Costs (₹)", min_value=100, max_value=100000,
-                                                       value=5500, step=100, key="b_fuel_srv")
+                                                       value=7500, step=100, key="b_fuel_srv")
                 with col3:
                     b_annual_od_ins = st.number_input("Annual Insurance Renewal (₹)", min_value=100,
-                                                      max_value=100000, value=1600, step=100, key="b_fuel_ins")
+                                                      max_value=100000, value=6800, step=100, key="b_fuel_ins")
 
                 # Petrol Processing Engine Math
                 b_monthly_city_dist = b_weekly_city_km * 4.33
