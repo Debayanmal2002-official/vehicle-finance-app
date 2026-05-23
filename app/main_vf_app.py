@@ -772,7 +772,7 @@ else:
                     st.caption(f"Extra {int(((b_total_loan_capacity - b_max_principal_loan)/bike_price)*100):,}% than actual Initial on Road Price.")
 
                 st.markdown(f"""
-                    ### 🎯 Beta Test Action Plan
+                    ### 🎯 Optimal Savings Plan:
 
                     * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(b_m_savings):,}/mo** into your simulation pool.
                     * **⏳ Savings Timeline:** Run this drill for exactly **{b_time_to_down_payment:.1f} Months**.
@@ -1297,7 +1297,7 @@ else:
                         f"Extra {int(((c_total_loan_capacity - c_max_principal_loan) / car_price) * 100):,}% than actual Initial on Road Price.")
 
                 st.markdown(f"""
-                    ### 🎯 Beta Test Action Plan
+                    ### 🎯 Optimal Savings Plan:
 
                     * **🛠️ The Sandbox Routine:** Lock down and divert **₹{int(c_m_savings):,}/mo** into your simulation pool.
                     * **⏳ Savings Timeline:** Run this drill for exactly **{c_time_to_down_payment:.1f} Months**.
